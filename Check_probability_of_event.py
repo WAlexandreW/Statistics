@@ -24,3 +24,17 @@ print(p_superior_x_crit)
 
 if p_inferior_x_crit <= 0.05:
   print("Probability of x_crit to occur is <5%: unlikely based on conventional confidence level, 95%")
+
+  #Reverse method:
+ confidence_level = 0.95 
+ #alpha, aka p_critical
+ alpha = 1- confidence_level
+ 
+  #if the z_score_hypothesis is less than the z_critical (based on 95% level confidence), it means the z_score_hypothesis is in the rejection region we decided.
+  z_critical = stats.norm.ppf(alpha)
+  
+if z_score > z_critical:
+  print("There is no evidence to reject the hypothesis/the sample")
+ else:
+  print("The sample/hypothesis sample is in the rejection region (based on the decided level of confidence) = this is unlikely to occur")
+  
