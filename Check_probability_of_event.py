@@ -21,3 +21,6 @@ p_inferior_x_crit = stats.norm.cdf(z_score)
 p_superior_x_crit = 1- p_inferior_x_crit
 print(p_inferior_x_crit)
 print(p_superior_x_crit)
+
+if p_inferior_x_crit <= 0.05:
+  print("Probability of x_crit to occur is <5%: unlikely based on conventional confidence level, 95%")
