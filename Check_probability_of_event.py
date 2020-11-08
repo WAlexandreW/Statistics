@@ -1,3 +1,9 @@
+import scipy.stats as stats
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
 n_sample = 1000
 
 #consider it as given
